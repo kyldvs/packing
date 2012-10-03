@@ -1,9 +1,13 @@
-package struct;
+package geom;
 
 import xml.XMLAble;
 
 public class Point implements XMLAble {
 
+	public static Point origin() {
+		return new Point(0,0,0);
+	}
+	
 	public int x;
 	public int y;
 	public int z;
@@ -31,5 +35,17 @@ public class Point implements XMLAble {
 		return sb.toString();
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Point) {
+			Point p = (Point) obj;
+			return x == p.x && y == p.y && z == p.z;
+		}
+		return false;
+	}
 	
+	@Override
+	public int hashCode() {
+		return x + 31 * y + 473 * z;
+	}
 }

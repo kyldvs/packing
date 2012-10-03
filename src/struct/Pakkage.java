@@ -1,5 +1,6 @@
 package struct;
 
+import geom.Point;
 import xml.XMLAble;
 
 public class Pakkage implements XMLAble {

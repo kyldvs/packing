@@ -1,5 +1,7 @@
 package algorithm;
 
+import geom.Point;
+
 import java.awt.Rectangle;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,7 +18,6 @@ import struct.PackList;
 import struct.PackPallet;
 import struct.Pakkage;
 import struct.Pallet;
-import struct.Point;
 import struct.Surface;
 
 public class Jiang implements Algorithm {

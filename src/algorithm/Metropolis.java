@@ -1,5 +1,7 @@
 package algorithm;
 
+import geom.Point;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -15,7 +17,6 @@ import struct.PackList;
 import struct.PackPallet;
 import struct.Pakkage;
 import struct.Pallet;
-import struct.Point;
 
 public class Metropolis implements Algorithm {
 
