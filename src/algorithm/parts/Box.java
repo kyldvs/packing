@@ -3,28 +3,28 @@ package algorithm.parts;
 import geom.Point;
 import geom.Points;
 
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class Box {
 
 	public Point at, dim;
-	public Set<Box> boxes;
+	public List<Box> boxes;
 	public Map<String, Object> map;
 
 	public Box(Point at, Point dim) {
 		this.at = at;
 		this.dim = dim;
-		this.boxes = new HashSet<>();
+		this.boxes = new ArrayList<>();
 		this.map = new HashMap<>();
 	}
 
 	public Box(Box copy) {
 		this.at = new Point(copy.at);
 		this.dim = new Point(copy.dim);
-		this.boxes = new HashSet<>();
+		this.boxes = new ArrayList<>();
 		for (Box b : copy.boxes) {
 			this.boxes.add(new Box(b));
 		}
