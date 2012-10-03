@@ -42,13 +42,11 @@ public class Harmonic implements Algorithm {
 
 		Map<Integer, Set<Box>> map = new HashMap<>();
 		
-		int maxHeight = 1;
 		for (OrderLine line : orderLines) {
 			Article actArticle = line.getArticle();
 			Box article = new Box(Point.origin(), new Point(actArticle.getLength(), actArticle.getWidth(), actArticle.getHeight()));
 			article.p("weight", actArticle.getWeight());
 			article.p("article", actArticle);
-			maxHeight = Math.max(maxHeight, article.dim.z);			
 			
 			for (String barcode : line.getBarcodes()) {
 				Box item = new Box(article);
@@ -63,31 +61,75 @@ public class Harmonic implements Algorithm {
 
 		List<Box> layers = new ArrayList<>();
 		for (int height : map.keySet()) {
-			Box layer = new Box(Point.origin(), new Point(pallet.dim.x, pallet.dim.y, height));
-			for (Box item : map.get(height)) {
-				layer.add(item);
+			int maxX = 1;
+			Set<Box> items = new HashSet<>(map.get(height));
+			for (Box b : items) {
+				maxX = Math.max(maxX, b.dim.x);
 			}
-			finishLayer(layer);
 			
-			/*
+			Map<Integer, Set<Box>> xDim = new HashMap<>();
 			
-			Map<Integer, Set<Thing>> lengths = new HashMap<>();
-			for (int i = 1; i < 100; i++) {
-				int round = (int) ((1.0d / i) * (double) maxHeight) + 1;
-				lengths.put(round, new HashSet<Thing>());
-				Iterator<Thing> iter = things.iterator();
+			int last = (int) (0.01 * maxX + 1);
+			int lastI = (int) (1.0 / (Math.max(last - 1.0, 1) / (double) maxX));
+			
+			for (int i = lastI; i > 0; i--) {
+				int round = (int) ((1.0d / i) * (double) maxX) + 1;
+				xDim.put(round, new HashSet<Box>());
+				Set<Box> roundedBoxes = xDim.get(round);
+				
+				Iterator<Box> iter = items.iterator();
 				while(iter.hasNext()) {
-					Thing next = iter.next();
-					if (next.article.getLength() > round) {
-						lengths.get(round).add(next);
+					Box next = iter.next();
+					if (next.dim.x < round) {
+						roundedBoxes.add(next);
 						iter.remove();
 					}
 				}
-				
-				if (lengths.get(round).isEmpty()) {
-					lengths.remove(round);
+			}
+			
+			if (!items.isEmpty()) {
+				System.out.println("Had some items left... weird.");
+				xDim.put(maxX, new HashSet<Box>());
+				Set<Box> roundedBoxes = xDim.get(maxX);
+				for (Box box : items) {
+					roundedBoxes.add(box);
 				}
 			}
+			
+			Box layer = new Box(Point.origin(), new Point(pallet.dim.x, pallet.dim.y, height));
+
+			// Shelve "height"
+			int y = 0;
+			int x = 0;
+			for (int dim : xDim.keySet()) {
+				for (Box b : xDim.get(dim)) {
+					if (b.at.y + b.dim.y + y > layer.dim.y) {
+						y = 0;
+						x += dim;
+					}
+					if (b.at.x + b.dim.x + x > layer.dim.x) {
+						x = 0;
+						y = 0;
+						finishLayer(layer);
+						layers.add(layer);
+						layer = new Box(Point.origin(), new Point(pallet.dim.x, pallet.dim.y, height));
+					}
+					
+					b.at.x += x;
+					b.at.y += y;
+					
+					y += b.dim.y;
+					
+					
+					
+					layer.add(b);
+				}
+			}
+			
+			finishLayer(layer);
+			layers.add(layer);
+			
+			/*
 			
 			Layer l = new Layer();
 			int len = 0;
@@ -211,21 +253,22 @@ public class Harmonic implements Algorithm {
 				List<Pakkage> pakkages = new ArrayList<Pakkage>();
 				int height = 0;
 				for (Box l : layers) {
+					height += l.dim.z;
 					for (Box b : l.boxes) {
+						Point center = b.center();
 						Pakkage p = new Pakkage(
 								packSequence++, 
 								incomingSequence++, 
-								b.i("orderLineNo"), 
+								b.i("orderLineNumber"), 
 								0, 
 								(Article) b.o("article"), 
-								b.s("barcode"), 
-								new Point(b.at.x, b.at.y, height), 
-								2, 
+								b.s("barcode"),
+								new Point(center.x, center.y, height), 
+								1, 
 								Pakkage.getDefaultApproachPoints(),
 								0);
 						pakkages.add(p);
 					}
-					height += l.dim.z;
 				}
 				PackPallet packPallet = new PackPallet(pallet, pakkages);
 				palletData.add(packPallet);

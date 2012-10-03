@@ -1,6 +1,6 @@
 <Response>
 	<PackList>
-		<OrderID>6</OrderID>
+		<OrderID>8</OrderID>
 		<PackPallets>
 			<PackPallet>
 				<PalletNumber>1</PalletNumber>
@@ -15,16 +15,16 @@
 					<Package>
 						<PackSequence>0</PackSequence>
 						<IncomingSequence>0</IncomingSequence>
-						<OrderLineNo>4</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>2</ID>
-							<Description>1261 12OZ CN 8/3 CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>89</Length>
-							<Width>43</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>650</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -32,13 +32,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261009</Barcode>
+						<Barcode>1128006</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>222</Y>
+							<X>66</X>
+							<Y>219</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -59,16 +59,16 @@
 					<Package>
 						<PackSequence>1</PackSequence>
 						<IncomingSequence>1</IncomingSequence>
-						<OrderLineNo>4</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>2</ID>
-							<Description>1261 12OZ CN 8/3 CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>89</Length>
-							<Width>43</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>650</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -76,13 +76,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261014</Barcode>
+						<Barcode>1128004</Barcode>
 						<PlacePosition>
-							<X>43</X>
-							<Y>222</Y>
+							<X>66</X>
+							<Y>263</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -120,13 +120,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261012</Barcode>
+						<Barcode>1261014</Barcode>
 						<PlacePosition>
-							<X>86</X>
-							<Y>222</Y>
+							<X>177</X>
+							<Y>21</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -164,13 +164,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261007</Barcode>
+						<Barcode>1261001</Barcode>
 						<PlacePosition>
-							<X>172</X>
-							<Y>222</Y>
+							<X>177</X>
+							<Y>64</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -208,13 +208,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261001</Barcode>
+						<Barcode>1261003</Barcode>
 						<PlacePosition>
-							<X>129</X>
-							<Y>222</Y>
+							<X>177</X>
+							<Y>107</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -235,16 +235,16 @@
 					<Package>
 						<PackSequence>5</PackSequence>
 						<IncomingSequence>5</IncomingSequence>
-						<OrderLineNo>2</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>4</ID>
-							<Description>1459 12OZ CN 18/1 FM</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>131</Length>
-							<Width>66</Width>
+							<Length>89</Length>
+							<Width>43</Width>
 							<Height>41</Height>
-							<Weight>550</Weight>
+							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -252,13 +252,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1459008</Barcode>
+						<Barcode>1261017</Barcode>
 						<PlacePosition>
-							<X>132</X>
-							<Y>0</Y>
+							<X>177</X>
+							<Y>150</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -296,13 +296,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261011</Barcode>
+						<Barcode>1261009</Barcode>
 						<PlacePosition>
-							<X>215</X>
-							<Y>222</Y>
+							<X>177</X>
+							<Y>193</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -323,16 +323,16 @@
 					<Package>
 						<PackSequence>7</PackSequence>
 						<IncomingSequence>7</IncomingSequence>
-						<OrderLineNo>2</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>4</ID>
-							<Description>1459 12OZ CN 18/1 FM</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>131</Length>
-							<Width>66</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>550</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -340,13 +340,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1459002</Barcode>
+						<Barcode>1128010</Barcode>
 						<PlacePosition>
-							<X>198</X>
-							<Y>0</Y>
+							<X>199</X>
+							<Y>237</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -367,16 +367,16 @@
 					<Package>
 						<PackSequence>8</PackSequence>
 						<IncomingSequence>8</IncomingSequence>
-						<OrderLineNo>2</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>4</ID>
-							<Description>1459 12OZ CN 18/1 FM</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>131</Length>
-							<Width>66</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>550</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -384,13 +384,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1459006</Barcode>
+						<Barcode>1128007</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>111</Y>
+							<X>332</X>
+							<Y>22</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -411,16 +411,16 @@
 					<Package>
 						<PackSequence>9</PackSequence>
 						<IncomingSequence>9</IncomingSequence>
-						<OrderLineNo>2</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>4</ID>
-							<Description>1459 12OZ CN 18/1 FM</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>131</Length>
-							<Width>66</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>550</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -428,13 +428,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1459009</Barcode>
+						<Barcode>1128028</Barcode>
 						<PlacePosition>
-							<X>66</X>
-							<Y>111</Y>
+							<X>199</X>
+							<Y>281</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -455,16 +455,16 @@
 					<Package>
 						<PackSequence>10</PackSequence>
 						<IncomingSequence>10</IncomingSequence>
-						<OrderLineNo>4</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>2</ID>
-							<Description>1261 12OZ CN 8/3 CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>89</Length>
-							<Width>43</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>650</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -472,13 +472,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261004</Barcode>
+						<Barcode>1128005</Barcode>
 						<PlacePosition>
-							<X>258</X>
-							<Y>222</Y>
+							<X>332</X>
+							<Y>66</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -516,13 +516,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1459001</Barcode>
+						<Barcode>1459007</Barcode>
 						<PlacePosition>
-							<X>198</X>
-							<Y>111</Y>
+							<X>65</X>
+							<Y>33</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -543,16 +543,16 @@
 					<Package>
 						<PackSequence>12</PackSequence>
 						<IncomingSequence>12</IncomingSequence>
-						<OrderLineNo>2</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>4</ID>
-							<Description>1459 12OZ CN 18/1 FM</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>131</Length>
-							<Width>66</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>550</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -560,13 +560,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1459004</Barcode>
+						<Barcode>1128018</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>222</Y>
+							<X>332</X>
+							<Y>110</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -604,13 +604,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261005</Barcode>
+						<Barcode>1261007</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>278</Y>
+							<X>310</X>
+							<Y>240</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -631,16 +631,16 @@
 					<Package>
 						<PackSequence>14</PackSequence>
 						<IncomingSequence>14</IncomingSequence>
-						<OrderLineNo>2</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>4</ID>
-							<Description>1459 12OZ CN 18/1 FM</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>131</Length>
-							<Width>66</Width>
+							<Length>89</Length>
+							<Width>43</Width>
 							<Height>41</Height>
-							<Weight>550</Weight>
+							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -648,13 +648,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1459003</Barcode>
+						<Barcode>1261012</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>0</Y>
+							<X>310</X>
+							<Y>197</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -675,16 +675,16 @@
 					<Package>
 						<PackSequence>15</PackSequence>
 						<IncomingSequence>15</IncomingSequence>
-						<OrderLineNo>2</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>4</ID>
-							<Description>1459 12OZ CN 18/1 FM</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>131</Length>
-							<Width>66</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>550</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -692,13 +692,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1459005</Barcode>
+						<Barcode>1128022</Barcode>
 						<PlacePosition>
-							<X>66</X>
-							<Y>0</Y>
+							<X>332</X>
+							<Y>154</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -736,13 +736,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261006</Barcode>
+						<Barcode>1261018</Barcode>
 						<PlacePosition>
-							<X>43</X>
-							<Y>278</Y>
+							<X>310</X>
+							<Y>283</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -763,16 +763,16 @@
 					<Package>
 						<PackSequence>17</PackSequence>
 						<IncomingSequence>17</IncomingSequence>
-						<OrderLineNo>4</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>2</ID>
-							<Description>1261 12OZ CN 8/3 CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>89</Length>
-							<Width>43</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>650</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -780,13 +780,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261002</Barcode>
+						<Barcode>1128011</Barcode>
 						<PlacePosition>
-							<X>86</X>
-							<Y>278</Y>
+							<X>66</X>
+							<Y>88</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -824,13 +824,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261013</Barcode>
+						<Barcode>1261020</Barcode>
 						<PlacePosition>
-							<X>129</X>
-							<Y>278</Y>
+							<X>44</X>
+							<Y>131</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -851,16 +851,16 @@
 					<Package>
 						<PackSequence>19</PackSequence>
 						<IncomingSequence>19</IncomingSequence>
-						<OrderLineNo>4</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>2</ID>
-							<Description>1261 12OZ CN 8/3 CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>89</Length>
-							<Width>43</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>650</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -868,13 +868,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261008</Barcode>
+						<Barcode>1128027</Barcode>
 						<PlacePosition>
-							<X>172</X>
-							<Y>278</Y>
+							<X>66</X>
+							<Y>175</Y>
 							<Z>41</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -912,13 +912,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261010</Barcode>
+						<Barcode>1261005</Barcode>
 						<PlacePosition>
-							<X>215</X>
-							<Y>278</Y>
-							<Z>41</Z>
+							<X>310</X>
+							<Y>21</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -956,13 +956,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1261003</Barcode>
+						<Barcode>1261011</Barcode>
 						<PlacePosition>
-							<X>258</X>
-							<Y>278</Y>
-							<Z>41</Z>
+							<X>44</X>
+							<Y>21</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -983,16 +983,16 @@
 					<Package>
 						<PackSequence>22</PackSequence>
 						<IncomingSequence>22</IncomingSequence>
-						<OrderLineNo>2</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>4</ID>
-							<Description>1459 12OZ CN 18/1 FM</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>131</Length>
-							<Width>66</Width>
+							<Length>132</Length>
+							<Width>44</Width>
 							<Height>41</Height>
-							<Weight>550</Weight>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1000,13 +1000,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>1459007</Barcode>
+						<Barcode>1128003</Barcode>
 						<PlacePosition>
-							<X>132</X>
-							<Y>111</Y>
-							<Z>41</Z>
+							<X>66</X>
+							<Y>65</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1027,15 +1027,15 @@
 					<Package>
 						<PackSequence>23</PackSequence>
 						<IncomingSequence>23</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
+							<Length>89</Length>
+							<Width>43</Width>
+							<Height>41</Height>
 							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
@@ -1044,13 +1044,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843004</Barcode>
+						<Barcode>1261013</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>0</Y>
-							<Z>123</Z>
+							<X>44</X>
+							<Y>108</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1071,16 +1071,16 @@
 					<Package>
 						<PackSequence>24</PackSequence>
 						<IncomingSequence>24</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
-							<Weight>650</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1088,13 +1088,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843007</Barcode>
+						<Barcode>1128026</Barcode>
 						<PlacePosition>
-							<X>67</X>
-							<Y>0</Y>
-							<Z>123</Z>
+							<X>66</X>
+							<Y>152</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1115,15 +1115,15 @@
 					<Package>
 						<PackSequence>25</PackSequence>
 						<IncomingSequence>25</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
+							<Length>89</Length>
+							<Width>43</Width>
+							<Height>41</Height>
 							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
@@ -1132,13 +1132,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843001</Barcode>
+						<Barcode>1261019</Barcode>
 						<PlacePosition>
-							<X>134</X>
-							<Y>0</Y>
-							<Z>123</Z>
+							<X>310</X>
+							<Y>64</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1159,15 +1159,15 @@
 					<Package>
 						<PackSequence>26</PackSequence>
 						<IncomingSequence>26</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
+							<Length>89</Length>
+							<Width>43</Width>
+							<Height>41</Height>
 							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
@@ -1176,13 +1176,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843005</Barcode>
+						<Barcode>1261002</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>56</Y>
-							<Z>123</Z>
+							<X>310</X>
+							<Y>151</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1203,16 +1203,16 @@
 					<Package>
 						<PackSequence>27</PackSequence>
 						<IncomingSequence>27</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
-							<Weight>650</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1220,13 +1220,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843002</Barcode>
+						<Barcode>1128013</Barcode>
 						<PlacePosition>
-							<X>201</X>
-							<Y>0</Y>
-							<Z>123</Z>
+							<X>332</X>
+							<Y>108</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1247,16 +1247,16 @@
 					<Package>
 						<PackSequence>28</PackSequence>
 						<IncomingSequence>28</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
-							<Weight>650</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1264,13 +1264,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843006</Barcode>
+						<Barcode>1128023</Barcode>
 						<PlacePosition>
-							<X>134</X>
-							<Y>56</Y>
-							<Z>123</Z>
+							<X>66</X>
+							<Y>196</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1291,16 +1291,16 @@
 					<Package>
 						<PackSequence>29</PackSequence>
 						<IncomingSequence>29</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
-							<Weight>650</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1308,13 +1308,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843012</Barcode>
+						<Barcode>1128019</Barcode>
 						<PlacePosition>
-							<X>67</X>
-							<Y>56</Y>
-							<Z>123</Z>
+							<X>66</X>
+							<Y>240</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1335,16 +1335,16 @@
 					<Package>
 						<PackSequence>30</PackSequence>
 						<IncomingSequence>30</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
-							<Weight>650</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1352,13 +1352,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843003</Barcode>
+						<Barcode>1128030</Barcode>
 						<PlacePosition>
-							<X>201</X>
-							<Y>56</Y>
-							<Z>123</Z>
+							<X>332</X>
+							<Y>239</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1379,16 +1379,16 @@
 					<Package>
 						<PackSequence>31</PackSequence>
 						<IncomingSequence>31</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
-							<Weight>650</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1396,13 +1396,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843009</Barcode>
+						<Barcode>1128020</Barcode>
 						<PlacePosition>
-							<X>67</X>
-							<Y>112</Y>
-							<Z>123</Z>
+							<X>332</X>
+							<Y>195</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1423,16 +1423,16 @@
 					<Package>
 						<PackSequence>32</PackSequence>
 						<IncomingSequence>32</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
-							<Weight>650</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1440,13 +1440,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843011</Barcode>
+						<Barcode>1128025</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>112</Y>
-							<Z>123</Z>
+							<X>199</X>
+							<Y>22</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1467,16 +1467,16 @@
 					<Package>
 						<PackSequence>33</PackSequence>
 						<IncomingSequence>33</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
-							<Weight>650</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1484,13 +1484,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843008</Barcode>
+						<Barcode>1128009</Barcode>
 						<PlacePosition>
-							<X>201</X>
-							<Y>112</Y>
-							<Z>123</Z>
+							<X>199</X>
+							<Y>66</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1511,15 +1511,15 @@
 					<Package>
 						<PackSequence>34</PackSequence>
 						<IncomingSequence>34</IncomingSequence>
-						<OrderLineNo>3</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>1</ID>
-							<Description>843 12OZ CN 24/1CB</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>90</Length>
-							<Width>67</Width>
-							<Height>82</Height>
+							<Length>89</Length>
+							<Width>43</Width>
+							<Height>41</Height>
 							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
@@ -1528,13 +1528,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>843010</Barcode>
+						<Barcode>1261015</Barcode>
 						<PlacePosition>
-							<X>134</X>
-							<Y>112</Y>
-							<Z>123</Z>
+							<X>177</X>
+							<Y>109</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1555,16 +1555,16 @@
 					<Package>
 						<PackSequence>35</PackSequence>
 						<IncomingSequence>35</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1572,13 +1572,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810006</Barcode>
+						<Barcode>1128012</Barcode>
 						<PlacePosition>
-							<X>95</X>
-							<Y>0</Y>
-							<Z>216</Z>
+							<X>199</X>
+							<Y>153</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1599,16 +1599,16 @@
 					<Package>
 						<PackSequence>36</PackSequence>
 						<IncomingSequence>36</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>2</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>4</ID>
+							<Description>1459 12OZ CN 18/1 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>131</Length>
+							<Width>66</Width>
+							<Height>41</Height>
+							<Weight>550</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1616,13 +1616,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810009</Barcode>
+						<Barcode>1459009</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>0</Y>
-							<Z>216</Z>
+							<X>198</X>
+							<Y>208</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1643,16 +1643,16 @@
 					<Package>
 						<PackSequence>37</PackSequence>
 						<IncomingSequence>37</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1660,13 +1660,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810004</Barcode>
+						<Barcode>1128002</Barcode>
 						<PlacePosition>
-							<X>190</X>
-							<Y>0</Y>
-							<Z>216</Z>
+							<X>199</X>
+							<Y>263</Y>
+							<Z>82</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1687,16 +1687,16 @@
 					<Package>
 						<PackSequence>38</PackSequence>
 						<IncomingSequence>38</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>2</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>4</ID>
+							<Description>1459 12OZ CN 18/1 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>131</Length>
+							<Width>66</Width>
+							<Height>41</Height>
+							<Weight>550</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1704,13 +1704,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810008</Barcode>
+						<Barcode>1459006</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>111</Y>
-							<Z>216</Z>
+							<X>331</X>
+							<Y>143</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1731,16 +1731,16 @@
 					<Package>
 						<PackSequence>39</PackSequence>
 						<IncomingSequence>39</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>2</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>4</ID>
+							<Description>1459 12OZ CN 18/1 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>131</Length>
+							<Width>66</Width>
+							<Height>41</Height>
+							<Weight>550</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1748,13 +1748,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810001</Barcode>
+						<Barcode>1459001</Barcode>
 						<PlacePosition>
-							<X>95</X>
-							<Y>111</Y>
-							<Z>216</Z>
+							<X>331</X>
+							<Y>77</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1775,16 +1775,16 @@
 					<Package>
 						<PackSequence>40</PackSequence>
 						<IncomingSequence>40</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1792,13 +1792,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810005</Barcode>
+						<Barcode>1128017</Barcode>
 						<PlacePosition>
-							<X>190</X>
-							<Y>111</Y>
-							<Z>216</Z>
+							<X>66</X>
+							<Y>22</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1819,16 +1819,16 @@
 					<Package>
 						<PackSequence>41</PackSequence>
 						<IncomingSequence>41</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>2</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>4</ID>
+							<Description>1459 12OZ CN 18/1 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>131</Length>
+							<Width>66</Width>
+							<Height>41</Height>
+							<Weight>550</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1836,13 +1836,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810003</Barcode>
+						<Barcode>1459004</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>222</Y>
-							<Z>216</Z>
+							<X>331</X>
+							<Y>209</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1863,16 +1863,16 @@
 					<Package>
 						<PackSequence>42</PackSequence>
 						<IncomingSequence>42</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>89</Length>
+							<Width>43</Width>
+							<Height>41</Height>
+							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1880,13 +1880,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810007</Barcode>
+						<Barcode>1261004</Barcode>
 						<PlacePosition>
-							<X>95</X>
-							<Y>222</Y>
-							<Z>216</Z>
+							<X>310</X>
+							<Y>263</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1907,16 +1907,16 @@
 					<Package>
 						<PackSequence>43</PackSequence>
 						<IncomingSequence>43</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1924,13 +1924,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810010</Barcode>
+						<Barcode>1128029</Barcode>
 						<PlacePosition>
-							<X>190</X>
-							<Y>222</Y>
-							<Z>216</Z>
+							<X>66</X>
+							<Y>66</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1951,16 +1951,16 @@
 					<Package>
 						<PackSequence>44</PackSequence>
 						<IncomingSequence>44</IncomingSequence>
-						<OrderLineNo>1</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>7</ID>
-							<Description>810 1L PL BS 1/15S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>95</Width>
-							<Height>93</Height>
-							<Weight>800</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -1968,13 +1968,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>810002</Barcode>
+						<Barcode>1128031</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>333</Y>
-							<Z>216</Z>
+							<X>66</X>
+							<Y>110</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -1995,16 +1995,16 @@
 					<Package>
 						<PackSequence>45</PackSequence>
 						<IncomingSequence>45</IncomingSequence>
-						<OrderLineNo>5</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>5</ID>
-							<Description>735 20OZ PL 1/24S</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>106</Width>
-							<Height>75</Height>
-							<Weight>900</Weight>
+							<Length>89</Length>
+							<Width>43</Width>
+							<Height>41</Height>
+							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -2012,13 +2012,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>735001</Barcode>
+						<Barcode>1261008</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>0</Y>
-							<Z>291</Z>
+							<X>44</X>
+							<Y>153</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -2039,16 +2039,16 @@
 					<Package>
 						<PackSequence>46</PackSequence>
 						<IncomingSequence>46</IncomingSequence>
-						<OrderLineNo>5</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>5</ID>
-							<Description>735 20OZ PL 1/24S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>106</Width>
-							<Height>75</Height>
-							<Weight>900</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -2056,13 +2056,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>735004</Barcode>
+						<Barcode>1128014</Barcode>
 						<PlacePosition>
-							<X>106</X>
-							<Y>0</Y>
-							<Z>291</Z>
+							<X>66</X>
+							<Y>197</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -2083,16 +2083,16 @@
 					<Package>
 						<PackSequence>47</PackSequence>
 						<IncomingSequence>47</IncomingSequence>
-						<OrderLineNo>5</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>5</ID>
-							<Description>735 20OZ PL 1/24S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>106</Width>
-							<Height>75</Height>
-							<Weight>900</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -2100,13 +2100,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>735005</Barcode>
+						<Barcode>1128001</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>111</Y>
-							<Z>291</Z>
+							<X>66</X>
+							<Y>241</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -2127,16 +2127,16 @@
 					<Package>
 						<PackSequence>48</PackSequence>
 						<IncomingSequence>48</IncomingSequence>
-						<OrderLineNo>5</OrderLineNo>
+						<OrderLineNo>2</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>5</ID>
-							<Description>735 20OZ PL 1/24S</Description>
+							<ID>4</ID>
+							<Description>1459 12OZ CN 18/1 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>106</Width>
-							<Height>75</Height>
-							<Weight>900</Weight>
+							<Length>131</Length>
+							<Width>66</Width>
+							<Height>41</Height>
+							<Weight>550</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -2144,13 +2144,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>735002</Barcode>
+						<Barcode>1459003</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>222</Y>
-							<Z>291</Z>
+							<X>198</X>
+							<Y>33</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -2171,16 +2171,16 @@
 					<Package>
 						<PackSequence>49</PackSequence>
 						<IncomingSequence>49</IncomingSequence>
-						<OrderLineNo>5</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>5</ID>
-							<Description>735 20OZ PL 1/24S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>159</Length>
-							<Width>106</Width>
-							<Height>75</Height>
-							<Weight>900</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -2188,13 +2188,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>735003</Barcode>
+						<Barcode>1128008</Barcode>
 						<PlacePosition>
-							<X>106</X>
-							<Y>111</Y>
-							<Z>291</Z>
+							<X>199</X>
+							<Y>88</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -2215,16 +2215,16 @@
 					<Package>
 						<PackSequence>50</PackSequence>
 						<IncomingSequence>50</IncomingSequence>
-						<OrderLineNo>6</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>8</ID>
-							<Description>455 2L PL 1/8S</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>161</Length>
-							<Width>80</Width>
-							<Height>110</Height>
-							<Weight>970</Weight>
+							<Length>89</Length>
+							<Width>43</Width>
+							<Height>41</Height>
+							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -2232,13 +2232,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>455004</Barcode>
+						<Barcode>1261010</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>0</Y>
-							<Z>401</Z>
+							<X>177</X>
+							<Y>131</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -2259,16 +2259,16 @@
 					<Package>
 						<PackSequence>51</PackSequence>
 						<IncomingSequence>51</IncomingSequence>
-						<OrderLineNo>6</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>8</ID>
-							<Description>455 2L PL 1/8S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>161</Length>
-							<Width>80</Width>
-							<Height>110</Height>
-							<Weight>970</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -2276,13 +2276,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>455001</Barcode>
+						<Barcode>1128016</Barcode>
 						<PlacePosition>
-							<X>80</X>
-							<Y>0</Y>
-							<Z>401</Z>
+							<X>199</X>
+							<Y>175</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -2303,16 +2303,16 @@
 					<Package>
 						<PackSequence>52</PackSequence>
 						<IncomingSequence>52</IncomingSequence>
-						<OrderLineNo>6</OrderLineNo>
+						<OrderLineNo>4</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>8</ID>
-							<Description>455 2L PL 1/8S</Description>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
 							<Type>1</Type>
-							<Length>161</Length>
-							<Width>80</Width>
-							<Height>110</Height>
-							<Weight>970</Weight>
+							<Length>89</Length>
+							<Width>43</Width>
+							<Height>41</Height>
+							<Weight>650</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -2320,13 +2320,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>455002</Barcode>
+						<Barcode>1261006</Barcode>
 						<PlacePosition>
-							<X>160</X>
-							<Y>0</Y>
-							<Z>401</Z>
+							<X>177</X>
+							<Y>218</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -2347,16 +2347,16 @@
 					<Package>
 						<PackSequence>53</PackSequence>
 						<IncomingSequence>53</IncomingSequence>
-						<OrderLineNo>6</OrderLineNo>
+						<OrderLineNo>8</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
-							<ID>8</ID>
-							<Description>455 2L PL 1/8S</Description>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
 							<Type>1</Type>
-							<Length>161</Length>
-							<Width>80</Width>
-							<Height>110</Height>
-							<Weight>970</Weight>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
 							<Family>2</Family>
 							<Rank>1</Rank>
 							<MaxRankOnTop>1000</MaxRankOnTop>
@@ -2364,13 +2364,13 @@
 							<MinTorque>1</MinTorque>
 							<MaxTorque>100</MaxTorque>
 						</Article>
-						<Barcode>455005</Barcode>
+						<Barcode>1128015</Barcode>
 						<PlacePosition>
-							<X>0</X>
-							<Y>111</Y>
-							<Z>401</Z>
+							<X>332</X>
+							<Y>22</Y>
+							<Z>123</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>
@@ -2391,6 +2391,1546 @@
 					<Package>
 						<PackSequence>54</PackSequence>
 						<IncomingSequence>54</IncomingSequence>
+						<OrderLineNo>8</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
+							<Type>1</Type>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1128024</Barcode>
+						<PlacePosition>
+							<X>199</X>
+							<Y>262</Y>
+							<Z>123</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>55</PackSequence>
+						<IncomingSequence>55</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843011</Barcode>
+						<PlacePosition>
+							<X>45</X>
+							<Y>33</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>56</PackSequence>
+						<IncomingSequence>56</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843012</Barcode>
+						<PlacePosition>
+							<X>45</X>
+							<Y>100</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>57</PackSequence>
+						<IncomingSequence>57</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843001</Barcode>
+						<PlacePosition>
+							<X>45</X>
+							<Y>234</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>58</PackSequence>
+						<IncomingSequence>58</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843006</Barcode>
+						<PlacePosition>
+							<X>45</X>
+							<Y>167</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>59</PackSequence>
+						<IncomingSequence>59</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843003</Barcode>
+						<PlacePosition>
+							<X>136</X>
+							<Y>33</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>60</PackSequence>
+						<IncomingSequence>60</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843002</Barcode>
+						<PlacePosition>
+							<X>136</X>
+							<Y>100</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>61</PackSequence>
+						<IncomingSequence>61</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843004</Barcode>
+						<PlacePosition>
+							<X>136</X>
+							<Y>234</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>62</PackSequence>
+						<IncomingSequence>62</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843008</Barcode>
+						<PlacePosition>
+							<X>136</X>
+							<Y>167</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>63</PackSequence>
+						<IncomingSequence>63</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843007</Barcode>
+						<PlacePosition>
+							<X>227</X>
+							<Y>33</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>64</PackSequence>
+						<IncomingSequence>64</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843009</Barcode>
+						<PlacePosition>
+							<X>227</X>
+							<Y>100</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>65</PackSequence>
+						<IncomingSequence>65</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843005</Barcode>
+						<PlacePosition>
+							<X>227</X>
+							<Y>167</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>66</PackSequence>
+						<IncomingSequence>66</IncomingSequence>
+						<OrderLineNo>3</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>1</ID>
+							<Description>843 12OZ CN 24/1CB</Description>
+							<Type>1</Type>
+							<Length>90</Length>
+							<Width>67</Width>
+							<Height>82</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>843010</Barcode>
+						<PlacePosition>
+							<X>227</X>
+							<Y>234</Y>
+							<Z>205</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>67</PackSequence>
+						<IncomingSequence>67</IncomingSequence>
+						<OrderLineNo>2</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>4</ID>
+							<Description>1459 12OZ CN 18/1 FM</Description>
+							<Type>1</Type>
+							<Length>131</Length>
+							<Width>66</Width>
+							<Height>41</Height>
+							<Weight>550</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1459005</Barcode>
+						<PlacePosition>
+							<X>65</X>
+							<Y>33</Y>
+							<Z>246</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>68</PackSequence>
+						<IncomingSequence>68</IncomingSequence>
+						<OrderLineNo>4</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>2</ID>
+							<Description>1261 12OZ CN 8/3 CB</Description>
+							<Type>1</Type>
+							<Length>89</Length>
+							<Width>43</Width>
+							<Height>41</Height>
+							<Weight>650</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1261016</Barcode>
+						<PlacePosition>
+							<X>44</X>
+							<Y>87</Y>
+							<Z>246</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>69</PackSequence>
+						<IncomingSequence>69</IncomingSequence>
+						<OrderLineNo>2</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>4</ID>
+							<Description>1459 12OZ CN 18/1 FM</Description>
+							<Type>1</Type>
+							<Length>131</Length>
+							<Width>66</Width>
+							<Height>41</Height>
+							<Weight>550</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1459002</Barcode>
+						<PlacePosition>
+							<X>65</X>
+							<Y>142</Y>
+							<Z>246</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>70</PackSequence>
+						<IncomingSequence>70</IncomingSequence>
+						<OrderLineNo>2</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>4</ID>
+							<Description>1459 12OZ CN 18/1 FM</Description>
+							<Type>1</Type>
+							<Length>131</Length>
+							<Width>66</Width>
+							<Height>41</Height>
+							<Weight>550</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1459008</Barcode>
+						<PlacePosition>
+							<X>65</X>
+							<Y>252</Y>
+							<Z>246</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>71</PackSequence>
+						<IncomingSequence>71</IncomingSequence>
+						<OrderLineNo>8</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>3</ID>
+							<Description>1128 12OZ CN 12/2 FM</Description>
+							<Type>1</Type>
+							<Length>132</Length>
+							<Width>44</Width>
+							<Height>41</Height>
+							<Weight>500</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1128021</Barcode>
+						<PlacePosition>
+							<X>66</X>
+							<Y>197</Y>
+							<Z>246</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>72</PackSequence>
+						<IncomingSequence>72</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810007</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>47</Y>
+							<Z>339</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>73</PackSequence>
+						<IncomingSequence>73</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810003</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>237</Y>
+							<Z>339</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>74</PackSequence>
+						<IncomingSequence>74</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810009</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>142</Y>
+							<Z>339</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>75</PackSequence>
+						<IncomingSequence>75</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810008</Barcode>
+						<PlacePosition>
+							<X>239</X>
+							<Y>47</Y>
+							<Z>339</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>76</PackSequence>
+						<IncomingSequence>76</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810004</Barcode>
+						<PlacePosition>
+							<X>239</X>
+							<Y>142</Y>
+							<Z>339</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>77</PackSequence>
+						<IncomingSequence>77</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810002</Barcode>
+						<PlacePosition>
+							<X>239</X>
+							<Y>237</Y>
+							<Z>339</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>78</PackSequence>
+						<IncomingSequence>78</IncomingSequence>
+						<OrderLineNo>5</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>5</ID>
+							<Description>735 20OZ PL 1/24S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>106</Width>
+							<Height>75</Height>
+							<Weight>900</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>735005</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>159</Y>
+							<Z>414</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>79</PackSequence>
+						<IncomingSequence>79</IncomingSequence>
+						<OrderLineNo>7</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>6</ID>
+							<Description>1052 16.9OZ PL 24/1</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>106</Width>
+							<Height>75</Height>
+							<Weight>900</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1052001</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>53</Y>
+							<Z>414</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>80</PackSequence>
+						<IncomingSequence>80</IncomingSequence>
+						<OrderLineNo>7</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>6</ID>
+							<Description>1052 16.9OZ PL 24/1</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>106</Width>
+							<Height>75</Height>
+							<Weight>900</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1052003</Barcode>
+						<PlacePosition>
+							<X>239</X>
+							<Y>53</Y>
+							<Z>414</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>81</PackSequence>
+						<IncomingSequence>81</IncomingSequence>
+						<OrderLineNo>5</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>5</ID>
+							<Description>735 20OZ PL 1/24S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>106</Width>
+							<Height>75</Height>
+							<Weight>900</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>735004</Barcode>
+						<PlacePosition>
+							<X>239</X>
+							<Y>159</Y>
+							<Z>414</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>82</PackSequence>
+						<IncomingSequence>82</IncomingSequence>
+						<OrderLineNo>5</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>5</ID>
+							<Description>735 20OZ PL 1/24S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>106</Width>
+							<Height>75</Height>
+							<Weight>900</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>735002</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>53</Y>
+							<Z>489</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>83</PackSequence>
+						<IncomingSequence>83</IncomingSequence>
+						<OrderLineNo>7</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>6</ID>
+							<Description>1052 16.9OZ PL 24/1</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>106</Width>
+							<Height>75</Height>
+							<Weight>900</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1052002</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>159</Y>
+							<Z>489</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>84</PackSequence>
+						<IncomingSequence>84</IncomingSequence>
+						<OrderLineNo>5</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>5</ID>
+							<Description>735 20OZ PL 1/24S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>106</Width>
+							<Height>75</Height>
+							<Weight>900</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>735001</Barcode>
+						<PlacePosition>
+							<X>239</X>
+							<Y>53</Y>
+							<Z>489</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>85</PackSequence>
+						<IncomingSequence>85</IncomingSequence>
+						<OrderLineNo>7</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>6</ID>
+							<Description>1052 16.9OZ PL 24/1</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>106</Width>
+							<Height>75</Height>
+							<Weight>900</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>1052004</Barcode>
+						<PlacePosition>
+							<X>239</X>
+							<Y>159</Y>
+							<Z>489</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>86</PackSequence>
+						<IncomingSequence>86</IncomingSequence>
+						<OrderLineNo>6</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>8</ID>
+							<Description>455 2L PL 1/8S</Description>
+							<Type>1</Type>
+							<Length>161</Length>
+							<Width>80</Width>
+							<Height>110</Height>
+							<Weight>970</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>455001</Barcode>
+						<PlacePosition>
+							<X>80</X>
+							<Y>40</Y>
+							<Z>599</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>87</PackSequence>
+						<IncomingSequence>87</IncomingSequence>
+						<OrderLineNo>6</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>8</ID>
+							<Description>455 2L PL 1/8S</Description>
+							<Type>1</Type>
+							<Length>161</Length>
+							<Width>80</Width>
+							<Height>110</Height>
+							<Weight>970</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>455004</Barcode>
+						<PlacePosition>
+							<X>80</X>
+							<Y>120</Y>
+							<Z>599</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>88</PackSequence>
+						<IncomingSequence>88</IncomingSequence>
+						<OrderLineNo>6</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>8</ID>
+							<Description>455 2L PL 1/8S</Description>
+							<Type>1</Type>
+							<Length>161</Length>
+							<Width>80</Width>
+							<Height>110</Height>
+							<Weight>970</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>455002</Barcode>
+						<PlacePosition>
+							<X>80</X>
+							<Y>200</Y>
+							<Z>599</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>89</PackSequence>
+						<IncomingSequence>89</IncomingSequence>
 						<OrderLineNo>6</OrderLineNo>
 						<ParentLayer>0</ParentLayer>
 						<Article>
@@ -2410,11 +3950,275 @@
 						</Article>
 						<Barcode>455003</Barcode>
 						<PlacePosition>
-							<X>80</X>
-							<Y>111</Y>
-							<Z>401</Z>
+							<X>242</X>
+							<Y>120</Y>
+							<Z>599</Z>
 						</PlacePosition>
-						<Orientation>2</Orientation>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>90</PackSequence>
+						<IncomingSequence>90</IncomingSequence>
+						<OrderLineNo>6</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>8</ID>
+							<Description>455 2L PL 1/8S</Description>
+							<Type>1</Type>
+							<Length>161</Length>
+							<Width>80</Width>
+							<Height>110</Height>
+							<Weight>970</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>455005</Barcode>
+						<PlacePosition>
+							<X>242</X>
+							<Y>40</Y>
+							<Z>599</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>91</PackSequence>
+						<IncomingSequence>91</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810010</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>47</Y>
+							<Z>692</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>92</PackSequence>
+						<IncomingSequence>92</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810006</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>142</Y>
+							<Z>692</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>93</PackSequence>
+						<IncomingSequence>93</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810001</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>237</Y>
+							<Z>692</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>94</PackSequence>
+						<IncomingSequence>94</IncomingSequence>
+						<OrderLineNo>1</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>7</ID>
+							<Description>810 1L PL BS 1/15S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>95</Width>
+							<Height>93</Height>
+							<Weight>800</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>810005</Barcode>
+						<PlacePosition>
+							<X>239</X>
+							<Y>47</Y>
+							<Z>692</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
+						<ApproachPoint1>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint1>
+						<ApproachPoint2>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint2>
+						<ApproachPoint3>
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</ApproachPoint3>
+						<StackHeightBefore>0</StackHeightBefore>
+					</Package>
+					<Package>
+						<PackSequence>95</PackSequence>
+						<IncomingSequence>95</IncomingSequence>
+						<OrderLineNo>5</OrderLineNo>
+						<ParentLayer>0</ParentLayer>
+						<Article>
+							<ID>5</ID>
+							<Description>735 20OZ PL 1/24S</Description>
+							<Type>1</Type>
+							<Length>159</Length>
+							<Width>106</Width>
+							<Height>75</Height>
+							<Weight>900</Weight>
+							<Family>2</Family>
+							<Rank>1</Rank>
+							<MaxRankOnTop>1000</MaxRankOnTop>
+							<HandlingAngles>All</HandlingAngles>
+							<MinTorque>1</MinTorque>
+							<MaxTorque>100</MaxTorque>
+						</Article>
+						<Barcode>735003</Barcode>
+						<PlacePosition>
+							<X>79</X>
+							<Y>53</Y>
+							<Z>767</Z>
+						</PlacePosition>
+						<Orientation>1</Orientation>
 						<ApproachPoint1>
 							<X>0</X>
 							<Y>0</Y>

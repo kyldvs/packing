@@ -31,6 +31,10 @@ public class Box {
 		this.map = new HashMap<>(copy.map);
 	}
 	
+	public Point center() {
+		return new Point(at.x + dim.x / 2, at.y + dim.y / 2, at.z + dim.z / 2);
+	}
+	
 	public void add(Box b) {
 		boxes.add(b);
 	}
