@@ -20,6 +20,7 @@ import struct.PackList;
 import struct.PackPallet;
 import struct.Pakkage;
 import struct.Pallet;
+import algorithm.parts.Box;
 
 public class Harmonic implements Algorithm {
 
@@ -32,28 +33,44 @@ public class Harmonic implements Algorithm {
 
 		Order order = in.getOrder();
 		List<OrderLine> orderLines = order.getOrderLines();
-		// Build Layers
 
 		// TODO Support multiple pallets
-		Pallet pallet = in.getPallets().get(0);
+		
+		Pallet actPallet = in.getPallets().get(0);
+		
+		Box pallet = new Box(Point.origin(), new Point(actPallet.getLength(), actPallet.getWidth(), actPallet.getMaxLoadHeight()));
 
-		Map<Integer, Set<Thing>> map = new HashMap<>();
+		Map<Integer, Set<Box>> map = new HashMap<>();
+		
 		int maxHeight = 1;
 		for (OrderLine line : orderLines) {
-			Article a = line.getArticle();
-			maxHeight = Math.max(maxHeight, a.getHeight());
+			Article actArticle = line.getArticle();
+			Box article = new Box(Point.origin(), new Point(actArticle.getLength(), actArticle.getWidth(), actArticle.getHeight()));
+			article.p("weight", actArticle.getWeight());
+			article.p("article", actArticle);
+			maxHeight = Math.max(maxHeight, article.dim.z);			
+			
 			for (String barcode : line.getBarcodes()) {
-				Thing t = new Thing(a, barcode, line.getOrderLineNo());
-				if (map.get(a.getHeight()) == null) {
-					map.put(a.getHeight(), new HashSet<Thing>());
+				Box item = new Box(article);
+				item.p("barcode", barcode);
+				item.p("orderLineNumber", line.getOrderLineNo());
+				if (map.get(article.dim.z) == null) {
+					map.put(article.dim.z, new HashSet<Box>());
 				}
-				map.get(a.getHeight()).add(t);
+				map.get(article.dim.z).add(item);
 			}
 		}
 
-		List<Layer> layers = new ArrayList<Layer>();
+		List<Box> layers = new ArrayList<>();
 		for (int height : map.keySet()) {
-			Set<Thing> things = new HashSet<>(map.get(height));
+			Box layer = new Box(Point.origin(), new Point(pallet.dim.x, pallet.dim.y, height));
+			for (Box item : map.get(height)) {
+				layer.add(item);
+			}
+			finishLayer(layer);
+			
+			/*
+			
 			Map<Integer, Set<Thing>> lengths = new HashMap<>();
 			for (int i = 1; i < 100; i++) {
 				int round = (int) ((1.0d / i) * (double) maxHeight) + 1;
@@ -95,13 +112,14 @@ public class Harmonic implements Algorithm {
 					System.out.printf("Point (%d, %d)\n", wid, len);
 				}
 			}
-			layers.add(l);
+			
+			*/
 		}
 		
 		// Build Quick Output
 
 		QuickOutput curr = new QuickOutput(in);
-		curr.layers = layers.toArray(new Layer[0]);
+		curr.layers = layers.toArray(new Box[0]);
 
 		// Metropolis Update
 
@@ -122,52 +140,18 @@ public class Harmonic implements Algorithm {
 		return curr.toOutput();
 	}
 
-
+	private void finishLayer(Box layer) {
+		int weight = 0;
+		for (Box b : layer.boxes) {
+			weight += b.i("weight");
+		}
+		layer.p("weight", weight);
+	}
 
 	private static double fitness(QuickOutput config) {
 		double height = config.getHeight();
 		double cog = config.getHeightOfCenterOfGravity();
 		return height/cog;
-	}
-
-	private class Layer {
-
-		private Map<Thing, Point> map;
-
-		public Layer() {
-			map = new HashMap<Thing, Point>();
-		}
-
-		public int getHeight() {
-			int min = Integer.MAX_VALUE;
-			int max = Integer.MIN_VALUE;
-			for (Thing t : map.keySet()) {
-				min = Math.min(min, map.get(t).z);
-				max = Math.max(max, map.get(t).z + t.article.getHeight());
-			}
-			return max - min;
-		}
-
-		public double getWeight() {
-			double weight = 0;
-			for (Thing t : map.keySet()) {
-				weight += t.article.getWeight();
-			}
-			return weight;
-		}
-
-	}
-
-	private class Thing {
-		private Article article;
-		private String barcode;
-		private int orderLineNo;
-
-		public Thing(Article article, String barcode, int orderLineNo) {
-			this.article = article;
-			this.barcode = barcode;
-			this.orderLineNo = orderLineNo;
-		}
 	}
 
 	private class QuickOutput {
@@ -177,7 +161,7 @@ public class Harmonic implements Algorithm {
 		/**
 		 * layers.get(0) is the one closest to the ground
 		 */
-		private Layer[] layers;
+		private Box[] layers;
 
 		public QuickOutput(Input input) {
 			this.input = input;
@@ -188,9 +172,9 @@ public class Harmonic implements Algorithm {
 		 */
 		public double getHeightOfCenterOfGravity() {
 			double adjustedWeight = 0.0, weight = 0.0, height = 0.0;
-			for (Layer l : layers) {
-				height += l.getHeight();
-				double tmp = l.getWeight();
+			for (Box l : layers) {
+				height += l.dim.z;
+				int tmp = l.i("weight");
 				adjustedWeight += (height * tmp);
 				weight += tmp;
 			}
@@ -202,8 +186,8 @@ public class Harmonic implements Algorithm {
 		 */
 		public int getHeight() {
 			int total = 0;
-			for (Layer l : layers) {
-				total += l.getHeight();
+			for (Box l : layers) {
+				total += l.dim.z;
 			}
 			return total;
 		}
@@ -213,7 +197,7 @@ public class Harmonic implements Algorithm {
 		}
 
 		public void swap(int a, int b) {
-			Layer x = layers[a];
+			Box x = layers[a];
 			layers[a] = layers[b];
 			layers[b] = x;
 		}
@@ -226,15 +210,22 @@ public class Harmonic implements Algorithm {
 			for (Pallet pallet : input.getPallets()) {
 				List<Pakkage> pakkages = new ArrayList<Pakkage>();
 				int height = 0;
-				for (Layer l : layers) {
-					height += l.getHeight();
-					for (Thing t : l.map.keySet()) {
-						Point pt = l.map.get(t);
-						int x = pt.x;// + t.article.getLength() / 2;
-						int y = pt.y;// + t.article.getWidth() / 2;
-						Pakkage p = new Pakkage(packSequence++, incomingSequence++, t.orderLineNo, 0, t.article, t.barcode, new Point(x, y, height), 2, Pakkage.getDefaultApproachPoints(), 0);
+				for (Box l : layers) {
+					for (Box b : l.boxes) {
+						Pakkage p = new Pakkage(
+								packSequence++, 
+								incomingSequence++, 
+								b.i("orderLineNo"), 
+								0, 
+								(Article) b.o("article"), 
+								b.s("barcode"), 
+								new Point(b.at.x, b.at.y, height), 
+								2, 
+								Pakkage.getDefaultApproachPoints(),
+								0);
 						pakkages.add(p);
 					}
+					height += l.dim.z;
 				}
 				PackPallet packPallet = new PackPallet(pallet, pakkages);
 				palletData.add(packPallet);
