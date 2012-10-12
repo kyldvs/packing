@@ -3,6 +3,8 @@ package algorithm;
 import geom.Point;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -140,8 +142,37 @@ public class Harmonic implements Algorithm {
 		QuickOutput curr = new QuickOutput(in);
 		curr.layers = layers.toArray(new Box[0]);
 
+		Arrays.sort(curr.layers, new Comparator<Box>() {
+			static final int BUMP = 100_000_000;
+			@Override
+			public int compare(Box o1, Box o2) {
+				Box l1 = o1.boxes.get(o1.boxes.size() - 1);
+				Box l2 = o2.boxes.get(o2.boxes.size() - 1);
+				int d1 = area(o1);//((l1.at.x + l1.dim.x) * (l1.at.y + l1.dim.y));
+				int d2 = area(o2);//((l2.at.x + l2.dim.x) * (l2.at.y + l2.dim.y));
+				
+				int ret = 0;
+				if (Math.abs(d1 - d2) < 100) {
+					ret = o2.i("weight") - o1.i("weight"); 
+				} else {
+					ret = d1 - d1;
+				}
+				
+				if (o1.has("full") && o2.has("full")) {
+					return ret;
+				} else if (o1.has("full")) {
+					return ret - BUMP;
+				} else if (o2.has("full")) {
+					return ret + BUMP;
+				} else {
+					return ret;
+				}
+			}
+		});
+		
 		// Metropolis Update
 
+		/*
 		double fit = fitness(curr);
 		int numlayers = curr.getNumberOfLayers();
 		for (int i = 0; i < SAMPLES; i++) {
@@ -155,34 +186,53 @@ public class Harmonic implements Algorithm {
 				curr.swap(a,b);
 			}
 		}
+		*/
 
 		return curr.toOutput();
 	}
 
+	private int area(Box layer) {
+		int area = 0;
+		for (int i = 0; i < layer.boxes.size(); i++) {
+			Box b = layer.boxes.get(i);
+			area += b.dim.x * b.dim.y;
+		}
+		return area;
+	}
+	
 	private void expandX(Box layer) {
-		int numX = 0, maxX = 0, lastX = -1; 
-		for (Box b : layer.boxes) {
-			if (b.at.x != lastX) {
-				numX++;
-				lastX = b.at.x;
-				maxX = Math.max(maxX, b.at.x + b.dim.x);
-			}
+		List<Integer> shelves = shelves(layer);
+		int maxX = 0;
+		for (int i = shelves.get(shelves.size() - 2); i < shelves.get(shelves.size() - 1); i++) {
+			Box check = layer.boxes.get(i);
+			maxX = Math.max(maxX, check.at.x + check.dim.x);
 		}
 
-		int add = (layer.dim.x - maxX) / numX;
-
-		numX = -1;
-		lastX = -1;
-		for (Box b : layer.boxes) {
-			if (b.at.x != lastX) {
-				numX++;
-				lastX = b.at.x;
+		int space = layer.dim.x - maxX;
+		int add = space / (shelves.size() - 2);
+		for (int i = 0; i < shelves.size() - 1; i++) {
+			int a = shelves.get(i);
+			int z = shelves.get(i + 1);
+			for (int j = a; j < z; j++) {
+				layer.boxes.get(j).at.x += (add * i);
 			}
-			b.at.x += (add * numX);
 		}
 	}
 
 	private void expandY(Box layer) {
+		List<Integer> shelves = shelves(layer);
+		for (int i = 0; i < shelves.size() - 1; i++) {
+			int a = shelves.get(i);
+			int z = shelves.get(i + 1);
+			Box last = layer.boxes.get(z - 1);
+			int add = (layer.dim.y - (last.at.y + last.dim.y)) / (z - a - 1);
+			for (int j = a; j < z; j++) {
+				layer.boxes.get(j).at.y += (add * (j - a));
+			}
+		}
+	}
+
+	private List<Integer> shelves(Box layer) {
 		int start = 0, lastX = -1;
 		List<Integer> shelves = new ArrayList<>();
 		for (Box b : layer.boxes) {
@@ -193,19 +243,11 @@ public class Harmonic implements Algorithm {
 			start++;
 		}
 		shelves.add(start);
-		
-		for (int i = 0; i < shelves.size() - 1; i++) {
-			int a = shelves.get(i);
-			int z = shelves.get(i + 1);
-			Box last = layer.boxes.get(z - 1);
-			int add = (layer.dim.y - (last.at.y + last.dim.y)) / (z - a);
-			for (int j = a; j < z; j++) {
-				layer.boxes.get(j).at.y += (add * (j - a));
-			}
-		}
+		return shelves;
 	}
-
+	
 	private void fullLayer(Box layer) {
+		layer.p("full", null);
 		expandX(layer);
 		expandY(layer);
 		finishLayer(layer);

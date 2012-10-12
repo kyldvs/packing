@@ -62,4 +62,8 @@ public class Box {
 	public int i(String key) {
 		return (Integer) map.get(key);
 	}
+	
+	public boolean has(String key) {
+		return map.containsKey(key);
+	}
 }
