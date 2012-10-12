@@ -35,19 +35,19 @@ public class Harmonic implements Algorithm {
 		List<OrderLine> orderLines = order.getOrderLines();
 
 		// TODO Support multiple pallets
-		
+
 		Pallet actPallet = in.getPallets().get(0);
-		
+
 		Box pallet = new Box(Point.origin(), new Point(actPallet.getLength(), actPallet.getWidth(), actPallet.getMaxLoadHeight()));
 
 		Map<Integer, Set<Box>> map = new HashMap<>();
-		
+
 		for (OrderLine line : orderLines) {
 			Article actArticle = line.getArticle();
 			Box article = new Box(Point.origin(), new Point(actArticle.getLength(), actArticle.getWidth(), actArticle.getHeight()));
 			article.p("weight", actArticle.getWeight());
 			article.p("article", actArticle);
-			
+
 			for (String barcode : line.getBarcodes()) {
 				Box item = new Box(article);
 				item.p("barcode", barcode);
@@ -66,17 +66,17 @@ public class Harmonic implements Algorithm {
 			for (Box b : items) {
 				maxX = Math.max(maxX, b.dim.x);
 			}
-			
+
 			Map<Integer, Set<Box>> xDim = new HashMap<>();
-			
+
 			int last = (int) (0.01 * maxX + 1);
 			int lastI = (int) (1.0 / (Math.max(last - 1.0, 1) / (double) maxX));
-			
+
 			for (int i = lastI; i > 0; i--) {
 				int round = (int) Math.round((1.0d / i) * (double) maxX);
 				xDim.put(round, new HashSet<Box>());
 				Set<Box> roundedBoxes = xDim.get(round);
-				
+
 				Iterator<Box> iter = items.iterator();
 				while(iter.hasNext()) {
 					Box next = iter.next();
@@ -86,16 +86,16 @@ public class Harmonic implements Algorithm {
 					}
 				}
 			}
-			
+
 			if (!items.isEmpty()) {
-				System.out.println("Had some items left... weird.");
+				//System.out.println("Had some items left... weird.");
 				xDim.put(maxX, new HashSet<Box>());
 				Set<Box> roundedBoxes = xDim.get(maxX);
 				for (Box box : items) {
 					roundedBoxes.add(box);
 				}
 			}
-			
+
 			Box layer = new Box(Point.origin(), new Point(pallet.dim.x, pallet.dim.y, height));
 
 			// Shelve "height"
@@ -104,39 +104,37 @@ public class Harmonic implements Algorithm {
 			int x = 0;
 			for (int dim : xDim.keySet()) {
 				for (Box b : xDim.get(dim)) {
-					System.out.println("Width: " + b.dim.x + " Rounded to: " + dim);
+					//System.out.println("Width: " + b.dim.x + " Rounded to: " + dim);
 					if (b.at.y + b.dim.y + y > layer.dim.y) {
 						y = 0;
 						x += dim;
-//						expandShelf(layer, shelfStart, shelfEnd);
 						shelfStart = shelfEnd + 1;
 						shelfEnd = shelfStart;
 					}
-					
+
 					if (b.at.x + b.dim.x + x > layer.dim.x) {
-						System.out.println("Pallet Width: " + layer.dim.x);
-						System.out.println("Width: " + (b.at.x + b.dim.x + x));
+						//System.out.println("Pallet Width: " + layer.dim.x);
+						//System.out.println("Width: " + (b.at.x + b.dim.x + x));
 						x = 0;
 						y = 0;
-						finishLayer(layer);
+						fullLayer(layer);
 						layers.add(layer);
 						layer = new Box(Point.origin(), new Point(pallet.dim.x, pallet.dim.y, height));
 					}
-					
+
 					b.at.x += x;
 					b.at.y += y;
-					
+
 					y += b.dim.y;
 					layer.add(b);
 					shelfEnd++;
 				}
 			}
-			
-//			expandShelf(layer, shelfStart, shelfEnd);
+
 			finishLayer(layer);
 			layers.add(layer);
 		}
-		
+
 		// Build Quick Output
 
 		QuickOutput curr = new QuickOutput(in);
@@ -161,33 +159,18 @@ public class Harmonic implements Algorithm {
 		return curr.toOutput();
 	}
 
-	private void expandShelf(Box layer, int shelfStart, int shelfEnd) {
-		int space = layer.dim.y;
-		for (int i = shelfStart; i <= shelfEnd && i < layer.boxes.size(); i++) {
-			space -= layer.boxes.get(i).dim.y;
-		}
-		int add = space / (shelfEnd - shelfStart);
-		for (int i = shelfStart; i < shelfEnd && i < layer.boxes.size(); i++) {
-			layer.boxes.get(i).at.y += (add * (i - shelfStart));
-		}
-	}
-	
-	private void finishLayer(Box layer) {
-		int weight = 0;
-		
-		// Expand horizontally
-		/*
+	private void expandX(Box layer) {
 		int numX = 0, maxX = 0, lastX = -1; 
 		for (Box b : layer.boxes) {
 			if (b.at.x != lastX) {
 				numX++;
 				lastX = b.at.x;
-				maxX = Math.max(maxX, b.at.x);
+				maxX = Math.max(maxX, b.at.x + b.dim.x);
 			}
 		}
-		
+
 		int add = (layer.dim.x - maxX) / numX;
-		
+
 		numX = -1;
 		lastX = -1;
 		for (Box b : layer.boxes) {
@@ -197,8 +180,39 @@ public class Harmonic implements Algorithm {
 			}
 			b.at.x += (add * numX);
 		}
-		*/
+	}
+
+	private void expandY(Box layer) {
+		int start = 0, lastX = -1;
+		List<Integer> shelves = new ArrayList<>();
+		for (Box b : layer.boxes) {
+			if (b.at.x != lastX) {
+				lastX = b.at.x;
+				shelves.add(start);
+			}
+			start++;
+		}
+		shelves.add(start);
 		
+		for (int i = 0; i < shelves.size() - 1; i++) {
+			int a = shelves.get(i);
+			int z = shelves.get(i + 1);
+			Box last = layer.boxes.get(z - 1);
+			int add = (layer.dim.y - (last.at.y + last.dim.y)) / (z - a);
+			for (int j = a; j < z; j++) {
+				layer.boxes.get(j).at.y += (add * (j - a));
+			}
+		}
+	}
+
+	private void fullLayer(Box layer) {
+		expandX(layer);
+		expandY(layer);
+		finishLayer(layer);
+	}
+
+	private void finishLayer(Box layer) {
+		int weight = 0;
 		for (Box b : layer.boxes) {
 			weight += b.i("weight");
 		}
@@ -294,5 +308,5 @@ public class Harmonic implements Algorithm {
 			return out;
 		}
 	}
-	
+
 }
