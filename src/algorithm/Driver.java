@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
+import algorithm.parts.RoundingFunction;
+
 import struct.Input;
 import struct.Output;
 import xml.Xml;
@@ -16,7 +18,7 @@ public class Driver {
 		}
 		
 		Input in = Xml.input(new File(args[0]));
-		Algorithm a = new Harmonic();
+		Algorithm a = new Harmonic(RoundingFunction.harmonic());
 		Output o = a.run(in);
 		PrintWriter pw = new PrintWriter(new FileWriter(new File(args[1])));
 		pw.write(o.toXml(""));

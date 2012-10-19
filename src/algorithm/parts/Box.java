@@ -8,8 +8,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import struct.Pallet;
+
 public class Box {
 
+	public static Box fromPallet(Pallet p) {
+		return new Box(Point.origin(), new Point(p.getLength(), p.getWidth(), p.getMaxLoadHeight()));
+	}
+	
 	public Point at, dim;
 	public List<Box> boxes;
 	public Map<String, Object> map;
@@ -45,6 +51,13 @@ public class Box {
 						Points.add(at, dim))) {
 			add(b);
 		}
+	}
+	
+	public void rotate() {
+		p("orientation", i("orientation") == 1 ? 2 : 1);
+		int tmp = dim.x;
+		dim.x = dim.y;
+		dim.y = tmp;
 	}
 	
 	public void p(String key, Object value) {

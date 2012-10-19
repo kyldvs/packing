@@ -7,12 +7,12 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 import java.util.Set;
 
+import primitives.Primitives;
 import struct.Article;
 import struct.Input;
 import struct.Order;
@@ -23,28 +23,19 @@ import struct.PackPallet;
 import struct.Pakkage;
 import struct.Pallet;
 import algorithm.parts.Box;
+import algorithm.parts.RoundingFunction;
 
 public class Harmonic implements Algorithm {
 
-	private static final int SAMPLES = 10000;
-
-	private static final Random r = new Random();
-
-	@Override
-	public Output run(Input in) {
-
-		Order order = in.getOrder();
-		List<OrderLine> orderLines = order.getOrderLines();
-
-		// TODO Support multiple pallets
-
-		Pallet actPallet = in.getPallets().get(0);
-
-		Box pallet = new Box(Point.origin(), new Point(actPallet.getLength(), actPallet.getWidth(), actPallet.getMaxLoadHeight()));
-
+	private RoundingFunction rf; 
+	
+	public Harmonic(RoundingFunction rf) {
+		this.rf = rf;
+	}
+	
+	private Map<Integer, Set<Box>> partitionHeights(Order order) {
 		Map<Integer, Set<Box>> map = new HashMap<>();
-
-		for (OrderLine line : orderLines) {
+		for (OrderLine line : order.getOrderLines()) {
 			Article actArticle = line.getArticle();
 			Box article = new Box(Point.origin(), new Point(actArticle.getLength(), actArticle.getWidth(), actArticle.getHeight()));
 			article.p("weight", actArticle.getWeight());
@@ -54,49 +45,52 @@ public class Harmonic implements Algorithm {
 				Box item = new Box(article);
 				item.p("barcode", barcode);
 				item.p("orderLineNumber", line.getOrderLineNo());
+				item.p("orientation", 1);
 				if (map.get(article.dim.z) == null) {
 					map.put(article.dim.z, new HashSet<Box>());
 				}
 				map.get(article.dim.z).add(item);
 			}
 		}
+		return map;
+	}
+	
+	private Map<Integer, Set<Box>> round(Set<Box> items) {
+		List<Integer> dims = new LinkedList<>();
+		for (Box b : items) {
+			dims.add(b.dim.x);
+			dims.add(b.dim.y);
+		}
+		
+		rf.init(Primitives.toIntArr(dims.toArray(new Integer[0])));
+		Map<Integer, Set<Box>> rounded = new HashMap<>();
+		for (Box b : items) {
+			int rx = rf.apply(b.dim.x);
+			int ry = rf.apply(b.dim.y);
+			
+			if (Math.random() < 0.5 || (double) b.dim.x / rx < (double) b.dim.y / ry) {
+				b.rotate();
+			}
+			
+			int r = rf.apply(b.dim.x);
+			if (!rounded.containsKey(r)) {
+				rounded.put(r, new HashSet<Box>());
+			}
+			rounded.get(r).add(b);
+		}
+		return rounded;
+	}
+	
+	@Override
+	public Output run(Input in) {
+
+		// TODO Support multiple pallets
+		Box pallet = Box.fromPallet(in.getPallets().get(0));
+		Map<Integer, Set<Box>> map = partitionHeights(in.getOrder());
 
 		List<Box> layers = new ArrayList<>();
 		for (int height : map.keySet()) {
-			int maxX = 1;
-			Set<Box> items = new HashSet<>(map.get(height));
-			for (Box b : items) {
-				maxX = Math.max(maxX, b.dim.x);
-			}
-
-			Map<Integer, Set<Box>> xDim = new HashMap<>();
-
-			int last = (int) (0.01 * maxX + 1);
-			int lastI = (int) (1.0 / (Math.max(last - 1.0, 1) / (double) maxX));
-
-			for (int i = lastI; i > 0; i--) {
-				int round = (int) Math.round((1.0d / i) * (double) maxX);
-				xDim.put(round, new HashSet<Box>());
-				Set<Box> roundedBoxes = xDim.get(round);
-
-				Iterator<Box> iter = items.iterator();
-				while(iter.hasNext()) {
-					Box next = iter.next();
-					if (next.dim.x < round) {
-						roundedBoxes.add(next);
-						iter.remove();
-					}
-				}
-			}
-
-			if (!items.isEmpty()) {
-				//System.out.println("Had some items left... weird.");
-				xDim.put(maxX, new HashSet<Box>());
-				Set<Box> roundedBoxes = xDim.get(maxX);
-				for (Box box : items) {
-					roundedBoxes.add(box);
-				}
-			}
+			Map<Integer, Set<Box>> rounded = round(map.get(height));
 
 			Box layer = new Box(Point.origin(), new Point(pallet.dim.x, pallet.dim.y, height));
 
@@ -104,8 +98,8 @@ public class Harmonic implements Algorithm {
 			int shelfStart = 0, shelfEnd = 0;
 			int y = 0;
 			int x = 0;
-			for (int dim : xDim.keySet()) {
-				for (Box b : xDim.get(dim)) {
+			for (int dim : rounded.keySet()) {
+				for (Box b : rounded.get(dim)) {
 					//System.out.println("Width: " + b.dim.x + " Rounded to: " + dim);
 					if (b.at.y + b.dim.y + y > layer.dim.y) {
 						y = 0;
@@ -146,8 +140,8 @@ public class Harmonic implements Algorithm {
 			static final int BUMP = 100_000_000;
 			@Override
 			public int compare(Box o1, Box o2) {
-				Box l1 = o1.boxes.get(o1.boxes.size() - 1);
-				Box l2 = o2.boxes.get(o2.boxes.size() - 1);
+//				Box l1 = o1.boxes.get(o1.boxes.size() - 1);
+//				Box l2 = o2.boxes.get(o2.boxes.size() - 1);
 				int d1 = area(o1);//((l1.at.x + l1.dim.x) * (l1.at.y + l1.dim.y));
 				int d2 = area(o2);//((l2.at.x + l2.dim.x) * (l2.at.y + l2.dim.y));
 				
@@ -335,7 +329,7 @@ public class Harmonic implements Algorithm {
 								(Article) b.o("article"), 
 								b.s("barcode"),
 								new Point(center.x, center.y, height), 
-								1, 
+								b.i("orientation"), 
 								Pakkage.getDefaultApproachPoints(),
 								0);
 						pakkages.add(p);
