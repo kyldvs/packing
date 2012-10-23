@@ -56,7 +56,7 @@ public abstract class RoundingFunction implements Function<Integer, Integer> {
 				}
 				int x = Arrays.binarySearch(rounded, o);
 				if (x < 0) {
-					return rounded[-x + 1];
+					return rounded[-(x + 1)];
 				} else {
 					return rounded[x];
 				}

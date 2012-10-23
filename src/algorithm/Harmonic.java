@@ -4,6 +4,7 @@ import geom.Point;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -65,13 +66,14 @@ public class Harmonic implements Algorithm {
 		rf.init(Primitives.toIntArr(dims.toArray(new Integer[0])));
 		Map<Integer, Set<Box>> rounded = new HashMap<>();
 		for (Box b : items) {
-			int rx = rf.apply(b.dim.x);
-			int ry = rf.apply(b.dim.y);
+//			int rx = rf.apply(b.dim.x);
+//			int ry = rf.apply(b.dim.y);
+//			
+//			if ((double) b.dim.x / rx < (double) b.dim.y / ry) {
+//				b.rotate();
+//			}
 			
-			if (Math.random() < 0.5 || (double) b.dim.x / rx < (double) b.dim.y / ry) {
-				b.rotate();
-			}
-			
+			b.rotate();
 			int r = rf.apply(b.dim.x);
 			if (!rounded.containsKey(r)) {
 				rounded.put(r, new HashSet<Box>());
@@ -99,7 +101,10 @@ public class Harmonic implements Algorithm {
 			int y = 0;
 			int x = 0;
 			for (int dim : rounded.keySet()) {
-				for (Box b : rounded.get(dim)) {
+				List<Box> boxes = new ArrayList<>(rounded.get(dim));
+				Collections.sort(boxes, Box.COMP_AREA);
+				Collections.reverse(boxes);
+				for (Box b : boxes) {
 					//System.out.println("Width: " + b.dim.x + " Rounded to: " + dim);
 					if (b.at.y + b.dim.y + y > layer.dim.y) {
 						y = 0;
@@ -202,6 +207,10 @@ public class Harmonic implements Algorithm {
 			maxX = Math.max(maxX, check.at.x + check.dim.x);
 		}
 
+		if (shelves.size() <= 2) {
+			return;
+		}
+		
 		int space = layer.dim.x - maxX;
 		int add = space / (shelves.size() - 2);
 		for (int i = 0; i < shelves.size() - 1; i++) {
@@ -219,7 +228,7 @@ public class Harmonic implements Algorithm {
 			int a = shelves.get(i);
 			int z = shelves.get(i + 1);
 			Box last = layer.boxes.get(z - 1);
-			int add = (layer.dim.y - (last.at.y + last.dim.y)) / (z - a - 1);
+			int add = (layer.dim.y - (last.at.y + last.dim.y)) / (z - a);
 			for (int j = a; j < z; j++) {
 				layer.boxes.get(j).at.y += (add * (j - a));
 			}

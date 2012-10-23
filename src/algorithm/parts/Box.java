@@ -4,6 +4,7 @@ import geom.Point;
 import geom.Points;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,6 +13,13 @@ import struct.Pallet;
 
 public class Box {
 
+	public static final Comparator<Box> COMP_AREA = new Comparator<Box>() {
+		@Override
+		public int compare(Box ths, Box tht) {
+			return ths.area() - tht.area();
+		}
+	};
+	
 	public static Box fromPallet(Pallet p) {
 		return new Box(Point.origin(), new Point(p.getLength(), p.getWidth(), p.getMaxLoadHeight()));
 	}
@@ -39,6 +47,10 @@ public class Box {
 	
 	public Point center() {
 		return new Point(at.x + dim.x / 2, at.y + dim.y / 2, at.z + dim.z / 2);
+	}
+	
+	public int area() {
+		return dim.x * dim.y;
 	}
 	
 	public void add(Box b) {

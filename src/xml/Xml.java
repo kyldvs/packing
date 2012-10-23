@@ -131,7 +131,7 @@ public class Xml {
 	public static final int intValue(Element n, String tag) {
 		String text = textValue(n, tag);
 		if (text == null || text.isEmpty()) return 0;
-		else return Integer.parseInt(text);
+		else return Integer.parseInt(text.trim());
 	}
 
 	public static final String textValue(Element e) {
