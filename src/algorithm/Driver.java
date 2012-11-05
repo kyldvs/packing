@@ -4,11 +4,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-import algorithm.parts.RoundingFunction;
-
 import struct.Input;
 import struct.Output;
 import xml.Xml;
+import algorithm.parts.RoundingFunction;
 
 public class Driver {
 
@@ -18,7 +17,7 @@ public class Driver {
 		}
 		
 		Input in = Xml.input(new File(args[0]));
-		Algorithm a = new Greedy();
+		Algorithm a = new Harmonic(RoundingFunction.clustering(10));
 		Output o = a.run(in);
 		PrintWriter pw = new PrintWriter(new FileWriter(new File(args[1])));
 		pw.write(o.toXml(""));

@@ -73,7 +73,6 @@ public class Harmonic implements Algorithm {
 //				b.rotate();
 //			}
 			
-			b.rotate();
 			int r = rf.apply(b.dim.x);
 			if (!rounded.containsKey(r)) {
 				rounded.put(r, new HashSet<Box>());
