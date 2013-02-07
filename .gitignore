@@ -1,3 +1,6 @@
+.metadata*
+*.prefs
+
 *.class
 
 # Package Files #
