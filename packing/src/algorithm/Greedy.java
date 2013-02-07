@@ -3,10 +3,10 @@ package algorithm;
 import geom.Point;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -32,7 +32,7 @@ public class Greedy implements Algorithm {
 		Map<Integer, Set<Box>> map = new HashMap<>();
 		for (OrderLine line : order.getOrderLines()) {
 			Article actArticle = line.getArticle();
-			Box article = new Box(Point.origin(), new Point(actArticle.getLength(), actArticle.getWidth(), actArticle.getHeight()));
+			Box article = new Box(Point.origin(), new Point(actArticle.getLength() + 1, actArticle.getWidth() + 1, actArticle.getHeight()));
 			article.p("weight", actArticle.getWeight());
 			article.p("article", actArticle);
 
@@ -83,6 +83,7 @@ public class Greedy implements Algorithm {
 				layer.add(b);
 			}
 		}
+		
 		return rem;
 	}
 
@@ -136,9 +137,11 @@ public class Greedy implements Algorithm {
 
 		QuickOutput curr = new QuickOutput(in);
 		curr.layers = answer.toArray(new Box[0]);
-
+		Arrays.sort(curr.layers, Box.COMP_INTERNAL_AREA);
+		
 		// Metropolis Update
 
+		/*
 		double fit = fitness(curr);
 		int numlayers = curr.getNumberOfLayers();
 		for (int i = 0; i < SAMPLES; i++) {
@@ -154,17 +157,9 @@ public class Greedy implements Algorithm {
 				}
 			}
 		}
+		*/
 
 		return curr.toOutput();
-	}
-
-	private int area(Box layer) {
-		int area = 0;
-		for (int i = 0; i < layer.boxes.size(); i++) {
-			Box b = layer.boxes.get(i);
-			area += b.dim.x * b.dim.y;
-		}
-		return area;
 	}
 
 	private void finishLayer(Box layer) {

@@ -17,7 +17,11 @@ public class Driver {
 		}
 		
 		Input in = Xml.input(new File(args[0]));
+		
+//		Algorithm a = new Harmonic(RoundingFunction.harmonic());
 		Algorithm a = new Harmonic(RoundingFunction.clustering(10));
+//		Algorithm a = new Greedy();
+		
 		Output o = a.run(in);
 		PrintWriter pw = new PrintWriter(new FileWriter(new File(args[1])));
 		pw.write(o.toXml(""));

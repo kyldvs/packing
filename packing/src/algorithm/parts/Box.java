@@ -16,7 +16,14 @@ public class Box {
 	public static final Comparator<Box> COMP_AREA = new Comparator<Box>() {
 		@Override
 		public int compare(Box ths, Box tht) {
-			return ths.area() - tht.area();
+			return tht.area() - ths.area();
+		}
+	};
+	
+	public static final Comparator<Box> COMP_INTERNAL_AREA = new Comparator<Box>() {
+		@Override
+		public int compare(Box ths, Box tht) {
+			return tht.internalArea() - ths.internalArea();
 		}
 	};
 	
@@ -51,6 +58,14 @@ public class Box {
 	
 	public int area() {
 		return dim.x * dim.y;
+	}
+	
+	public int internalArea() {
+		int area = 0;
+		for (Box b : boxes) {
+			area += b.area();
+		}
+		return area;
 	}
 	
 	public void add(Box b) {
@@ -90,5 +105,25 @@ public class Box {
 	
 	public boolean has(String key) {
 		return map.containsKey(key);
+	}
+
+	public int realX() {
+		int min = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE;
+		for (Box b : boxes) {
+			min = Math.min(b.at.x, min);
+			max = Math.max(b.at.x + b.dim.x, max);
+		}
+		return max - min;
+	}
+	
+	public int realY() {
+		int min = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE;
+		for (Box b : boxes) {
+			min = Math.min(b.at.y, min);
+			max = Math.max(b.at.y + b.dim.y, max);
+		}
+		return max - min;
 	}
 }
