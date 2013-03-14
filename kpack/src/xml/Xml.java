@@ -36,12 +36,12 @@ public class Xml {
 			Pallet.Builder pb = Pallet.builder();
 			pb.desc(intValue(pallet, "PalletNumber"), textValue(pallet, "Description"));
 			Element dimensions = childElementByTag(pallet, "Dimensions");
-			pb.dimensions(intValue(dimensions, "Width"), intValue(dimensions, "Length"), intValue(dimensions, "MaxLoadHeight"));
+			pb.dimensions(intValue(dimensions, "Length"), intValue(dimensions, "Width"), intValue(dimensions, "MaxLoadHeight"));
 			pb.capacity(intValue(dimensions, "MaxLoadWeight"));
 			Element overhang = childElementByTag(pallet, "Overhang");
-			pb.overhang(intValue(overhang, "Width"), intValue(overhang, "Length"));
+			pb.overhang(intValue(overhang, "Length"), intValue(overhang, "Width"));
 			Element securityMargins = childElementByTag(pallet, "SecurityMargins");
-			pb.margins(intValue(securityMargins, "Width"), intValue(securityMargins, "Length"));
+			pb.margins(intValue(securityMargins, "Length"), intValue(securityMargins, "Width"));
 			ib.palle(pb.build());
 		}
 

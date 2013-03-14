@@ -2,13 +2,15 @@ package real;
 
 import geom.Point;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
 
 import parts.Box;
 import parts.Input;
 import parts.Order;
+import parts.Output;
 import parts.Pallet;
 import algorithm.Algorithm;
 
@@ -17,88 +19,95 @@ import com.google.common.collect.Maps;
 
 public class Reak implements Algorithm {
 
+	public class B {
+		
+		Box a, b, c;
+		
+		public B(Box a, Box b, Box c) {
+			this.a = a;
+			this.b = b;
+			this.c = c;
+		}
+	}
+
 	@Override
 	public String run(Input in) {
 		Order o = in.order;
 		Pallet p = in.pallets.get(0);
-		
-		// Output information
-		List<Box> order = Lists.newArrayList();
-		Map<Box, Point> pos = Maps.newHashMap();
-		Map<Box, Integer> orientation = Maps.newHashMap();
-		
-		int y = 0;
-		for (Box b : o.boxes) {
-			order.add(b);
-			pos.put(b, Point.create(0, y, 0));
-			orientation.put(b, new Random().nextInt(2) + 1); // 2 is 90, or do I put 0-90 in here
-			y += b.dim.y;
-		}
-		
-		StringBuilder sb = new StringBuilder();
-		sb.append("<Response>\n");
-		sb.append("\t<PackList>\n");
-		sb.append("\t\t<OrderID>" + o.desc.num + "</OrderID>\n");
-		sb.append("\t\t<PackPallets>\n");
-		sb.append("\t\t\t<PackPallet>\n");
-		sb.append("\t\t\t\t<PalletNumber>" + p.desc.num + "</PalletNumber>\n");
-		sb.append("\t\t\t\t<Description>" + p.desc.str + "</Description>\n");
-		sb.append("\t\t\t\t<Dimensions>\n");
-		sb.append("\t\t\t\t\t<Length>" + p.dim.z + "</Length>\n");
-		sb.append("\t\t\t\t\t<Width>" + p.dim.x + "</Width>\n");
-		sb.append("\t\t\t\t\t<MaxLoadHeight>" + p.dim.y + "</MaxLoadHeight>\n");
-		sb.append("\t\t\t\t\t<MaxLoadWeight>" + p.capacity + "</MaxLoadWeight>\n");
-		sb.append("\t\t\t\t</Dimensions>\n");
-		sb.append("\t\t\t\t<Packages>\n");
-		for(int i = 0; i < order.size(); i++) {
-			Box b = order.get(i);
-			sb.append("\t\t\t\t\t<Package>\n");
-			sb.append("\t\t\t\t\t\t<PackSequence>" + i + "</PackSequence>\n");
-			sb.append("\t\t\t\t\t\t<IncomingSequence>" + i + "</IncomingSequence>\n");
-			sb.append("\t\t\t\t\t\t<OrderLineNo>" + b.orderLine + "</OrderLineNo>\n");
-			sb.append("\t\t\t\t\t\t<ParentLayer>" + 0 + "</ParentLayer>\n"); // XXX
-			sb.append("\t\t\t\t\t\t<Article>\n");
-			sb.append("\t\t\t\t\t\t\t<ID>" + b.article.num + "</ID>\n");
-			sb.append("\t\t\t\t\t\t\t<Description>" + b.article.str + "</Description>\n");
-			sb.append("\t\t\t\t\t\t\t<Type>" + 0 + "</Type>\n"); // XXX
-			sb.append("\t\t\t\t\t\t\t<Length>" + b.dim.z + "</Length>\n");
-			sb.append("\t\t\t\t\t\t\t<Width>" + b.dim.x + "</Width>\n");
-			sb.append("\t\t\t\t\t\t\t<Height>" + b.dim.y + "</Height>\n");
-			sb.append("\t\t\t\t\t\t\t<Weight>" + b.weight + "</Weight>\n");
-			sb.append("\t\t\t\t\t\t\t<Family>" + 0 + "</Family>\n"); // XXX
-			sb.append("\t\t\t\t\t\t\t<Rank>" + 1 + "</Rank>\n"); // XXX
-			sb.append("\t\t\t\t\t\t\t<MaxRankOnTop>" + 1000 + "</MaxRankOnTop>\n"); // XXX
-			sb.append("\t\t\t\t\t\t\t<HandlingAngles>" + "All" + "</HandlingAngles>\n"); // XXX
-			sb.append("\t\t\t\t\t\t\t<MinTorque>" + 1 + "</MinTorque>\n"); // XXX
-			sb.append("\t\t\t\t\t\t\t<MaxTorque>" + 100 + "</MaxTorque>\n"); // XXX
-			sb.append("\t\t\t\t\t\t</Article>");
-			sb.append("\t\t\t\t\t\t<Barcode>" + b.barcode + "</Barcode>\n");
-			sb.append("\t\t\t\t\t\t<PlacePosition>\n");
-			
-			int or = orientation.get(b);
-			Point b_pos = pos.get(b);
-			sb.append("\t\t\t\t\t\t\t<X>" + (b_pos.x + (or == 1 ? b.dim.z / 2 : b.dim.x / 2)) + "</X>\n");
-			sb.append("\t\t\t\t\t\t\t<Y>" + (b_pos.z + (or == 1 ? b.dim.x / 2 : b.dim.z / 2)) + "</Y>\n");
-			sb.append("\t\t\t\t\t\t\t<Z>" + (b_pos.y + b.dim.y) + "</Z>\n");
 
-			sb.append("\t\t\t\t\t\t</PlacePosition>\n");
-			sb.append("\t\t\t\t\t\t<Orientation>" + or + "</Orientation>\n"); // XXX
-			for (int j = 1; j <= 3; j++) {
-				sb.append("\t\t\t\t\t\t<ApproachPoint" + j + ">\n");
-				sb.append("\t\t\t\t\t\t\t<X>" + 0 + "</X>\n");
-				sb.append("\t\t\t\t\t\t\t<Y>" + 0 + "</Y>\n");
-				sb.append("\t\t\t\t\t\t\t<Z>" + 0 + "</Z>\n");
-				sb.append("\t\t\t\t\t\t</ApproachPoint" + j + ">\n");
+		List<Box> boxes = Lists.newArrayList(o.boxes);
+
+		// sort by height
+		Collections.sort(boxes, new Comparator<Box>() {
+			@Override
+			public int compare(Box ths, Box tht) {
+				return tht.dim.y - ths.dim.y;
 			}
-			sb.append("\t\t\t\t\t\t<StackHeightBefore>" + 0 + "</StackHeightBefore>\n"); // XXX
-			sb.append("\t\t\t\t\t</Package>\n");
+		});
+
+		List<B> bs = Lists.newArrayList();
+		int maxX = 0;
+		int maxZ = 0;
+		
+		boolean found = true;
+		while(found) {
+			found = false;
+			for (int i = 0; i < boxes.size() && !found; i++) {
+				Box bi = boxes.get(i);
+				for (int j = i + 1; j < boxes.size() && !found; j++) {
+					Box bj = boxes.get(j);
+					for (int k = j + 1; k < boxes.size() && !found; k++) {
+						Box bk = boxes.get(k);
+						if (bi.dim.y == bj.dim.y + bk.dim.y) {
+							bs.add(new B(bi, bj, bk));
+							
+							maxX = Math.max(maxX, Math.max(bi.dim.x + bj.dim.x, bi.dim.x + bk.dim.x));
+							maxZ = Math.max(maxZ, Math.max(bi.dim.z, Math.max(bj.dim.z, bk.dim.z)));
+							
+							found = true;
+							boxes.remove(i);
+							boxes.remove(j - 1);
+							boxes.remove(k - 2);
+						}
+					}
+				}
+			}
 		}
-		sb.append("\t\t\t\t</Packages>\n");
-		sb.append("\t\t\t</PackPallet>\n");
-		sb.append("\t\t</PackPallets>\n");
-		sb.append("\t</PackList>\n");
-		sb.append("</Response>");
-		return sb.toString();
+		
+		// output information
+		List<Box> seq = Lists.newArrayList();
+		Map<Box, Point> pos = Maps.newHashMap();
+		Map<Box, Integer> orient = Maps.newHashMap();
+		
+		int[][] y = new int[(p.dim.x / maxX) + 1][(p.dim.z / maxZ) + 1];
+		int x = 0, z = 0;
+		for (B b : bs) {
+			if ((x + 1) * maxX > p.dim.x) {
+				x = 0;
+				z++;
+			}
+			
+			if ((z + 1) * maxZ > p.dim.z) {
+				z = 0;
+			}
+			
+			seq.add(b.a);
+			pos.put(b.a, Point.create((x * maxX), y[x][z], (z * maxZ)));
+			orient.put(b.a, 2);
+			
+			seq.add(b.b);
+			pos.put(b.b, Point.create((x * maxX) + b.a.dim.x, y[x][z], (z * maxZ)));
+			orient.put(b.b, 2);
+			
+			seq.add(b.c);
+			pos.put(b.c, Point.create((x * maxX) + b.a.dim.x, y[x][z] + b.b.dim.y, (z * maxZ)));
+			orient.put(b.c, 2);
+			
+			y[x][z] += b.a.dim.y;
+			x++;
+		}
+
+		return Output.format(o, p, seq, pos, orient);
 	}
 
 }

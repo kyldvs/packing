@@ -61,6 +61,11 @@ public class Box {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "Box [orderLine=" + orderLine + ", barcode=" + barcode + "]";
+	}
+
 	public static Builder builder() {
 		return new Builder();
 	}
