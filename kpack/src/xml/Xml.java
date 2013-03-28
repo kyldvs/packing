@@ -36,7 +36,7 @@ public class Xml {
 			Pallet.Builder pb = Pallet.builder();
 			pb.desc(intValue(pallet, "PalletNumber"), textValue(pallet, "Description"));
 			Element dimensions = childElementByTag(pallet, "Dimensions");
-			pb.dimensions(intValue(dimensions, "Length"), intValue(dimensions, "Width"), intValue(dimensions, "MaxLoadHeight"));
+			pb.dimensions(intValue(dimensions, "Length"), intValue(dimensions, "MaxLoadHeight"), intValue(dimensions, "Width"));
 			pb.capacity(intValue(dimensions, "MaxLoadWeight"));
 			Element overhang = childElementByTag(pallet, "Overhang");
 			pb.overhang(intValue(overhang, "Length"), intValue(overhang, "Width"));
@@ -79,7 +79,7 @@ public class Xml {
 			for (Element barcode : childrenElementsByTag(barcodes, "Barcode")) {
 				Box.Builder bb  = Box.builder();
 				bb.article(art_id, art_description);
-				bb.dim(width, height, length);
+				bb.dim(length, height, width);
 				bb.barcode(textValue(barcode));
 				bb.weight(weight);
 				bb.orderLine(orderLineNo);

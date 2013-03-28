@@ -1,5 +1,6 @@
 package geom;
 
+
 public class Point {
 
 	public static Point origin() {
@@ -14,6 +15,23 @@ public class Point {
 		return create(p.x, p.y, p.z);
 	}
 	
+	public static Point[][][] bounds(Point p, Point dim) {
+		Point[][][] ret = new Point[2][2][2];
+		ret[0][0][0] = (create(p.x, p.y, p.z));
+		ret[1][0][0] = (create(p.x + dim.x, p.y, p.z));
+		ret[0][1][0] = (create(p.x, p.y + dim.y, p.z));
+		ret[0][0][1] = (create(p.x, p.y, p.z + dim.z));
+		ret[1][1][0] = (create(p.x + dim.z, p.y + dim.y, p.z));
+		ret[0][1][1] = (create(p.x, p.y + dim.y, p.z + dim.z));
+		ret[1][0][1] = (create(p.x + dim.x, p.y, p.z + dim.z));
+		ret[1][1][1] = (create(p.x + dim.x, p.y + dim.y, p.z + dim.z));
+		return ret;
+	}
+	
+	public static Point add(Point a, Point b) {
+		return create(a.x + b.x, a.y + b.y, a.z + b.z);
+	}
+	
 	public final int x;
 	public final int y;
 	public final int z;
@@ -24,6 +42,10 @@ public class Point {
 		this.z = z;
 	}
 
+	public double dist(Point b) {
+		return b == null ? 1e30 : Math.sqrt(Math.pow(x - b.x, 2) + Math.pow(y - b.y, 2) + Math.pow(z - b.z, 2));
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -50,5 +72,10 @@ public class Point {
 		if (z != other.z)
 			return false;
 		return true;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("(%d, %d, %d)", x, y, z);
 	}
 }

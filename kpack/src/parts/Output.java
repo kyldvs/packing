@@ -17,8 +17,8 @@ public class Output {
 		sb.append("\t\t\t\t<PalletNumber>" + p.desc.num + "</PalletNumber>\n");
 		sb.append("\t\t\t\t<Description>" + p.desc.str + "</Description>\n");
 		sb.append("\t\t\t\t<Dimensions>\n");
-		sb.append("\t\t\t\t\t<Length>" + p.dim.z + "</Length>\n");
-		sb.append("\t\t\t\t\t<Width>" + p.dim.x + "</Width>\n");
+		sb.append("\t\t\t\t\t<Length>" + p.dim.x + "</Length>\n");
+		sb.append("\t\t\t\t\t<Width>" + p.dim.z + "</Width>\n");
 		sb.append("\t\t\t\t\t<MaxLoadHeight>" + p.dim.y + "</MaxLoadHeight>\n");
 		sb.append("\t\t\t\t\t<MaxLoadWeight>" + p.capacity + "</MaxLoadWeight>\n");
 		sb.append("\t\t\t\t</Dimensions>\n");
@@ -34,8 +34,8 @@ public class Output {
 			sb.append("\t\t\t\t\t\t\t<ID>" + b.article.num + "</ID>\n");
 			sb.append("\t\t\t\t\t\t\t<Description>" + b.article.str + "</Description>\n");
 			sb.append("\t\t\t\t\t\t\t<Type>" + 0 + "</Type>\n"); // XXX
-			sb.append("\t\t\t\t\t\t\t<Length>" + b.dim.z + "</Length>\n");
-			sb.append("\t\t\t\t\t\t\t<Width>" + b.dim.x + "</Width>\n");
+			sb.append("\t\t\t\t\t\t\t<Length>" + b.dim.x + "</Length>\n");
+			sb.append("\t\t\t\t\t\t\t<Width>" + b.dim.z + "</Width>\n");
 			sb.append("\t\t\t\t\t\t\t<Height>" + b.dim.y + "</Height>\n");
 			sb.append("\t\t\t\t\t\t\t<Weight>" + b.weight + "</Weight>\n");
 			sb.append("\t\t\t\t\t\t\t<Family>" + 0 + "</Family>\n"); // XXX
@@ -50,8 +50,8 @@ public class Output {
 
 			int or = orient.get(b);
 			Point b_pos = pos.get(b);
-			sb.append("\t\t\t\t\t\t\t<X>" + (b_pos.x + (or == 1 ? b.dim.z / 2 : b.dim.x / 2)) + "</X>\n");
-			sb.append("\t\t\t\t\t\t\t<Y>" + (b_pos.z + (or == 1 ? b.dim.x / 2 : b.dim.z / 2)) + "</Y>\n");
+			sb.append("\t\t\t\t\t\t\t<X>" + (b_pos.x + (or == 1 ? b.dim.x / 2 : b.dim.z / 2)) + "</X>\n");
+			sb.append("\t\t\t\t\t\t\t<Y>" + (b_pos.z + (or == 1 ? b.dim.z / 2 : b.dim.x / 2)) + "</Y>\n");
 			sb.append("\t\t\t\t\t\t\t<Z>" + (b_pos.y + b.dim.y) + "</Z>\n");
 
 			sb.append("\t\t\t\t\t\t</PlacePosition>\n");

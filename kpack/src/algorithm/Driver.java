@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-import real.Reak;
 import parts.Input;
+import real.BF;
 import xml.Xml;
 
 public class Driver {
@@ -17,7 +17,13 @@ public class Driver {
 		}
 		
 		Input in = Xml.input(new File(args[0]));
-		String output = new Reak().run(in);
+		
+		/*
+		 * Change the algorithm that gets instantiated here
+		 */
+		String output = new BF().run(in);
+		
+		
 		PrintWriter pw = new PrintWriter(new FileWriter(new File(args[1])));
 		pw.write(output);
 		pw.flush();
